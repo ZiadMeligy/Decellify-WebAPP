@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/dashstyle.css" />
+
+    <style>
+      table {
+        padding: 20px;
+        border-collapse: none;
+        width: 100%;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        color: #3651d4;
+        background-color: #f2f2f2;
+      }
+
+      tr:not(:last-child) {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="sidebar-top">
+        <span class="shrink-btn">
+          <i class="bx bx-chevron-left"></i>
+        </span>
+        <img src="./img/logo.png" class="logo" alt="" />
+        <h3 class="hide">Decellify</h3>
+      </div>
+
+      <div class="search">
+        <!-- <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ..."> -->
+      </div>
+
+      <div class="sidebar-links">
+        <ul>
+          <div class="active-tab"></div>
+          <li class="tooltip-element" data-tooltip="0">
+            <a href="#" id="patient-btn" class="active" data-active="0">
+              <div class="icon">
+                <i class="bx bx-tachometer"></i>
+                <i class="bx bxs-tachometer"></i>
+              </div>
+              <span class="link hide">Patients</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="1">
+            <a href="#" id="doctors-btn" data-active="1">
+              <div class="icon">
+                <i class="bx bx-folder"></i>
+                <i class="bx bxs-folder"></i>
+              </div>
+              <span class="link hide">Doctors</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="2">
+            <a href="#" id="reserve-btn" data-active="2">
+              <div class="icon">
+                <i class="bx bx-message-square-detail"></i>
+                <i class="bx bxs-message-square-detail"></i>
+              </div>
+              <span class="link hide">Reservations</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="3">
+            <a href="#" id="tech-btn" data-active="3">
+              <div class="icon">
+                <i class="bx bx-bar-chart-square"></i>
+                <i class="bx bxs-bar-chart-square"></i>
+              </div>
+              <span class="link hide">Technicians</span>
+            </a>
+          </li>
+          <div class="tooltip">
+            <span class="show">Patients</span>
+            <span>Doctors</span>
+            <span>Reservations</span>
+            <span>Technicians</span>
+          </div>
+        </ul>
+
+        <!-- <h4 class="hide">Shortcuts</h4> -->
+
+        <!-- <ul>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class='bx bx-notepad'></i>
+              <i class='bx bxs-notepad'></i>
+            </div>
+            <span class="link hide">Tasks</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="5">
+            <div class="icon">
+              <i class='bx bx-help-circle'></i>
+              <i class='bx bxs-help-circle'></i>
+            </div>
+            <span class="link hide">Help</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="6">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Settings</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Tasks</span>
+          <span>Help</span>
+          <span>Settings</span>
+        </div>
+      </ul> -->
+      </div>
+
+      <div class="sidebar-footer">
+        <a href="#" class="account tooltip-element" data-tooltip="0">
+          <i class="bx bx-user"></i>
+        </a>
+        <div class="admin-user tooltip-element" data-tooltip="1">
+          <div class="admin-profile hide">
+            <img
+              src="./img/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg"
+              alt=""
+            />
+            <div class="admin-info">
+              <h3>John Doe</h3>
+              <h5>Admin</h5>
+            </div>
+          </div>
+          <a href="index.html" class="log-out">
+            <i class="bx bx-log-out"></i>
+          </a>
+        </div>
+        <div class="tooltip">
+          <span class="show" id="showAdminUser"></span>
+          <span>Logout</span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="whole-container">
+        <div class="container" style="padding: 20px">
+          <h1 id="title-header">My Dashboard</h1>
+          <div id="add-container" class="add-container">
+            <!-- <a href="form.html" id="plus-button">
+    <button id="mariam" class="add-btn"
+
+    >ADD</button></a> -->
+          </div>
+        </div>
+        <table id="dynamic-table">
+          <thead>
+            <tr id="btats">
+              <th>Patient ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="JSpages/dash.js"></script>
+  </body>
+</html>

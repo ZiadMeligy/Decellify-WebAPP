@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="styles/reserv_form.css">
+</head>
+<body>
+    <div class="container">
+      <h2>Reservation Form</h2>
+      <!-- <p class="login-text">Make your reservation!</p> -->
+      <form>
+        <div class="form-group">
+          
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+    
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="form-group">
+          <!-- <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required> -->
+
+          <input type="number" id="age" name="age" placeholder="Age" required min="1">
+        </div>
+        <div class="form-group">
+
+          <select id="gender" name="gender" required>
+
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          
+          </select>
+        </div>
+        <div class="form-group">
+
+          <input type="time" id="time_reservation" name="time_reservation" placeholder="Time"  required>
+        </div>
+        <div class="form-group">
+    
+          <input type="date" id="date" name="date" placeholder="Date" required>
+        </div>
+        <!-- <input type="submit" value="Submit"> -->
+        <!-- <input type="submit" id="submit-btn">submit </input> -->
+        <input type="submit" id="submit-btn">Add</input>
+        <!-- <a href="dash.html">Dashboard</a> -->
+      </form>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="JSpages/reserv_form_user.js"></script>
+  </body>
+  </html>

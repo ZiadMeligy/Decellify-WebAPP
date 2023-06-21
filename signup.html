@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Validator</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter your first name"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Enter your last name"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <!--<div class="form-control">-->
+        <select style="width: 100%;padding: 10px;" name="Gender" id="Gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br><br>
+        <!--</div>-->
+        <div class="form-control">
+          <input type="number" id="age" placeholder="Enter your age" required />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <button id="button_submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="JSpages/signup.js"></script>
+  </body>
+</html>

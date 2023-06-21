@@ -1,0 +1,106 @@
+body{background-color: #000000;}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+    text-align: center;
+    color: black;
+  }
+
+ 
+.login-container1 {
+    /* width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+     align-items: center; */
+
+     max-width: 500px;
+     width: 500px;
+     margin: 0 auto;
+     margin-top: 200px;
+     background-color: white;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border:none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+     align-items: center;
+}
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="Appointment Reason:"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  input[type="date"],
+  input[type="Reservation Day:"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+ 
+  input[type="time"],
+  input[type="shift start:"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* margin-bottom: 20px; */
+    /* margin-top: 10px; */
+  }
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* to separate them */
+    margin-bottom: 10px;
+   
+  }
+  
+  button[type="submit"] {
+    cursor: pointer;
+    background-color: #1652f0;
+    border: 2px solid #1652f0;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#002fac;
+  }

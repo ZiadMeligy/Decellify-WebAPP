@@ -1,0 +1,111 @@
+body{background-color: #000000;}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* height: 75vh; */
+    font-family: Arial, sans-serif;
+    /* margin-bottom: 50px; */
+    height: 65vh;
+  }
+  .layout h2{
+    text-align: center;
+    color: black;
+  }
+  
+ 
+.login-container1 {
+    /* width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+     align-items: center; */
+
+     max-width: 600px;
+       
+     margin: 0 auto;
+     margin-top: 200px;
+     background-color: white;
+     padding: 20px;
+     border-radius: 5px;
+
+     
+}
+
+.login-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border:none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+     align-items: center;
+}
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+   width : 500px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="Appointment Reason:"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  input[type="date"],
+  input[type="Reservation Day:"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+ 
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  button[type="submit"] {
+    /* margin-top:10px;
+    background-color:#1652f0;
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer; */
+
+    cursor: pointer;
+    background-color: #1652f0;
+    border: 2px solid #1652f0;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#002fac;
+  }
+

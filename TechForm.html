@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles/TechForm.css">
+</head>
+<body><div class="layout"><div class="login-container1">
+    <!-- <div class="login-container"> -->
+    <h2>Technician Form</h2>
+  <form>
+   
+
+    <input type="text" id="FirstName" name="FirstName" placeholder="First Name" required> 
+    <input type="text" id="LastName" name="LastName" placeholder="Last Name" required> 
+    <input type="text" id="Age" required name="Age" placeholder="Age">  
+    <select id="Experience" name="Experience" required> 
+     
+        <option value="1 years"> One Year of Experience </option>
+        <option value="2 years">Two Years of Experience </option>
+        <option value="3 years">Three Years of Experience </option>
+        <option value="4 years">Four Years of Experience </option>
+        <option value="5 years"> Five Years of Experience </option>
+        <option value="More than 5 years">More than five years</option>
+   </select>
+<br>
+<select id="Device" name="Device" required> 
+     
+        <option value="Linear Accelator"> Linear Accelator</option>
+        <option value="CT Scanner"> CT Scanner</option>
+        <option value="Barchatherapy Equipment"> Barchatherapy Equipment</option>
+        <option value="CyberKnife"> CyberKnife </option>
+   </select>
+   <br>
+    <select id="Gender" name="Gender" required> 
+     
+        <option value="Male"> Male</option>
+        <option value="Female"> Female</option>
+   </select>
+
+
+    
+  <button type="submit" id="submit-btn"> Submit </button>
+  <!-- <a href="dash.html">Dashboard</a> -->
+   
+      
+  </form>
+</div>
+<!-- </div> -->
+</div>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="JSpages/TechForm.js"></script>
+</body>
+</html>
