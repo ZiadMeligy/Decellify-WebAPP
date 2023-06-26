@@ -497,3 +497,11 @@ nav a {
   max-width: 600px;
   max-height: 500px;
 }
+
+.grad-text{
+  text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #1652ef 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
